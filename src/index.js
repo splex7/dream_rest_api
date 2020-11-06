@@ -46,6 +46,6 @@ app.get("/movies", (req, res) => {
     .catch(console.dir);
 });
 
-app.listen(3030, () => {
+app.listen(process.env.PORT || 3000, () => {
   console.log("listening 3030");
 });
