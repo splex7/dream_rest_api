@@ -1,0 +1,19 @@
+{
+  "name": "mongodb-server",
+  "version": "1.0.0",
+  "description": "",
+  "main": "src/index.js",
+  "scripts": {
+    "start": "nodemon src/index.js"
+  },
+  "dependencies": {
+    "assert": "2.0.0",
+    "body-parser": "1.19.0",
+    "express": "4.17.1",
+    "mongodb": "3.6.2"
+  },
+  "devDependencies": {
+    "nodemon": "1.18.4"
+  },
+  "keywords": []
+}
