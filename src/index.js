@@ -35,17 +35,18 @@ async function run(limit) {
   );
 }
 const doSomething = (db, collection, query, limit, callback) => {
-  collection.find(query).limit(limit).toArray(callback);
+  collection.find(query).sort({ createdAt: -1 }).limit(limit).toArray(callback);
 };
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: true }));
 app.get("/movies", (req, res) => {
-  // let limit = req.query.limit ? parseInt(req.query.limit) : 100;
-  run(100)
+  console.log(req.query.limit);
+  let limit = req.query.limit ? parseInt(req.query.limit) : 100;
+  run(limit)
     .then(() => res.json(dataResult))
     .catch(console.dir);
 });
 
 app.listen(process.env.PORT || 3000, () => {
-  console.log("listening 3030");
+  console.log("listening 3000");
 });
