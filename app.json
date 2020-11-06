@@ -2,7 +2,7 @@
   "name": "Dream_Simple_Rest_API",
   "description": "This is the app for test",
   "repository": "https://github.com/splex7/dream_rest_api",
-  "logo": "https://cdn.iconscout.com/icon/premium/png-512-thumb/rest-api-560098.png",
+  "logo": "http://upload.wikimedia.org/wikipedia/commons/thumb/a/a7/React-icon.svg/220px-React-icon.svg.png",
   "keywords": ["node", "mongodb", "rest"],
   "buildpacks": [
     {
@@ -10,6 +10,6 @@
     }
   ],
   "scripts": {
-    "postdeploy": "npm run build"
+    "start": "node src/index.js"
   }
 }
