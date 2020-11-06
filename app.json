@@ -1,0 +1,15 @@
+{
+  "name": "Dream_Simple_Rest_API",
+  "description": "This is the app for test",
+  "repository": "https://github.com/splex7/dream_rest_api",
+  "logo": "http://upload.wikimedia.org/wikipedia/commons/thumb/a/a7/React-icon.svg/220px-React-icon.svg.png",
+  "keywords": ["node", "mongodb", "rest"],
+  "buildpacks": [
+    {
+      "url": "heroku/nodejs"
+    }
+  ],
+  "scripts": {
+    "postdeploy": "npm run build"
+  }
+}
